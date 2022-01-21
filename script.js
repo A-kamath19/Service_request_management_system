@@ -8,9 +8,9 @@ function loadData(records = []) {
 		table_data += `<td>${records[i].name}</td>`;
 		table_data += `<td>${records[i].age}</td>`;
 		table_data += `<td>${records[i].email}</td>`;
-                                     table_data += `<td>${records[i].reqdomain}</td>`;
-                                     table_data += `<td>${records[i].request}</td>`;
-                                     table_data += `<td>${records[i].reqstatus}</td>`;
+        table_data += `<td>${records[i].reqdomain}</td>`;
+        table_data += `<td>${records[i].request}</td>`;
+        table_data += `<td>${records[i].reqstatus}</td>`;
 		table_data += `<td>`;
 		table_data += `<a href="edit.html?id=${records[i]._id}"><button class="btn btn-primary">Edit</button></a>`;
 		table_data += '&nbsp;&nbsp;';
@@ -42,9 +42,9 @@ function getDataById(id) {
 		document.getElementById("name").value = data.name;
 		document.getElementById("age").value = data.age;
 		document.getElementById("email").value = data.email;
-                                  document.getElementById("reqdomain").value = data.reqdomain;
-                                  document.getElementById("request").value = data.request;
-                                  document.getElementById("reqstatus").value = data.reqstatus;
+        document.getElementById("reqdomain").value = data.reqdomain;
+        document.getElementById("request").value = data.request;
+        document.getElementById("reqstatus").value = data.reqstatus;
 	})
 }
 
@@ -53,9 +53,9 @@ function postData() {
 	var name = document.getElementById("name").value;
 	var age = document.getElementById("age").value;
 	var email = document.getElementById("email").value;
-                 var reqdomain = document.getElementById("reqdomain").value;
-                 var request = document.getElementById("request").value;
-                 var reqstatus = document.getElementById("reqstatus").value;
+    var reqdomain = document.getElementById("reqdomain").value;
+    var request = document.getElementById("request").value;
+    var reqstatus = document.getElementById("reqstatus").value;
 	
 	data = {name: name, age: age, email: email, reqdomain: reqdomain, request: request, reqstatus: reqstatus};
 	
@@ -70,7 +70,7 @@ function postData() {
 	.then((response) => response.json())
 	.then((data) => { 
 		console.log(data); 
-		window.location.href = "index.html";
+		window.location.href = "home.html";
 	})
 }	
 
@@ -81,9 +81,9 @@ function putData() {
 	var name = document.getElementById("name").value;
 	var age = document.getElementById("age").value;
 	var email = document.getElementById("email").value;
-                 var reqdomain = document.getElementById("reqdomain").value;
-                 var request = document.getElementById("request").value;
-                 var reqstatus = document.getElementById("reqstatus").value;
+    var reqdomain = document.getElementById("reqdomain").value;
+    var request = document.getElementById("request").value;
+    var reqstatus = document.getElementById("reqstatus").value;
 	
 	data = {_id: _id, name: name, age: age, email: email, reqdomain: reqdomain, request: request, reqstatus: reqstatus};
 	
@@ -98,7 +98,7 @@ function putData() {
 	.then((response) => response.json())
 	.then((data) => { 
 		console.table(data);
-		window.location.href = "index.html";
+		window.location.href = "home.html";
 	})
 }
 
