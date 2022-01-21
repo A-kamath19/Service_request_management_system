@@ -1,5 +1,5 @@
 //const api_url = "<heroku_app_url>"
-const api_url = "https://serreqapp.herokuapp.com/user"
+const api_url = "Your-app-link-here"
 
 function loadData(records = []) {
 	var table_data = "";

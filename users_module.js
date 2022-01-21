@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 //mongodb://127.0.0.1:27017/dbname
 //const conn_str = "mongodb://localhost:27017/tcet";
-const conn_str = "mongodb://tcet_user:user_123@cluster0-shard-00-00.eg6qw.mongodb.net:27017,cluster0-shard-00-01.eg6qw.mongodb.net:27017,cluster0-shard-00-02.eg6qw.mongodb.net:27017/tcet?ssl=true&replicaSet=atlas-u3t6om-shard-0&authSource=admin&retryWrites=true&w=majority";
+const conn_str = "Your-connection-string-here";
 
 
 mongoose.connect(conn_str, { useNewUrlParser: true, useUnifiedTopology: true })
