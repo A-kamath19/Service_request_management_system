@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>Service Request Management Portal</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+		<style>
+            .nav-text {
+                  text-decoration: none;
+                  color:black;
+                  margin-right: 20px;
+            }
+			a:hover{
+					background-color: #808080;
+                    color:white;
+			}
+		</style>
+	</head>
+	<body class="d-flex flex-column h-100 container">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <div class="container-fluid">
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				  <div class="navbar-nav">
+					<a class="nav-text" href="index.html">Home page</a>
+					<a class="nav-text" aria-current="page" href="home.html">Display List</a>
+					<a class="nav-text" href="add.html">Add New Request</a>
+				  </div>
+				</div>
+			  </div>
+			</nav>
+		</header><br>
+
+		<h3>Add Information</h3>
+
+		<form onsubmit="return false;">
+		  <div class="mb-3">
+			<label for="name" class="form-label">Name</label>
+			<input type="text" class="form-control" id="name" autofocus>
+		  </div>
+		  <div class="mb-3">
+			<label for="exampleInputPassword1" class="form-label">Age</label>
+			<input type="text" class="form-control" id="age">
+		  </div>
+		  <div class="mb-3">
+			<label for="email" class="form-label">Email</label>
+			<input type="text" class="form-control" id="email">
+		  </div>
+            <div class="mb-3">
+			<label for="requestdomain" class="form-label">Request domain</label>
+			<input type="text" class="form-control" id="requestdomain">
+		  </div>
+            <div class="mb-3">
+			<label for="request" class="form-label">Request</label>
+			<input type="text" class="form-control" id="request">
+		  </div>
+            <div class="mb-3">
+			<label for="reqstatus" class="form-label">Request status</label>
+			<input type="text" class="form-control" id="reqstatus">
+		  </div>
+		  <button class="btn btn-primary" onclick="return postData()">Submit</button>
+		  <a href="home.html" class="btn btn-primary">Cancel</a>
+		</form>
+
+		<footer class="footer mt-auto py-3 bg-light">
+		  <div class="container text-center">
+			<span class="text-muted">Made By Apeksha </span>
+		  </div>
+		</footer>
+	</body>
+	<script src="script.js"></script>
+	<script>
+	</script>
+</html>
